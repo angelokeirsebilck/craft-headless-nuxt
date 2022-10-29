@@ -1,0 +1,42 @@
+dateModified: 1667038530
+email:
+  fromEmail: info@angelokeirsebilck.be
+  fromName: 'Craft Headless Nuxt'
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    7dcedf78-ee98-48df-a260-81de2f469239: 'Public Schema' # Public Schema
+    62b8519f-3e6a-488b-b6b5-0f260e2ae0ca: 'Craft Headless Nuxt NL' # Craft Headless Nuxt NL
+    75a5c194-128f-421d-858b-db7dcf5dc7f9: 'Private Schema'
+    843e693f-2b71-469b-a9e4-4a8085586dbc: 'Craft Headless Nuxt' # Craft Headless Nuxt
+    a47da6fb-c5bb-40c6-a49d-661d60068d3f: Home # Home
+    df275c3d-7235-4291-828d-4527a56148e4: Pages # Pages
+    e99faab1-930e-410a-9275-15949843b78d: 'Craft Headless Nuxt EN' # Craft Headless Nuxt EN
+    eb118b96-e8db-471f-9e8f-6ea1a2b1a3fe: Common # Common
+    ecb05899-738e-41b2-8d85-a74583976e68: Home # Home
+    fae35562-c9f0-40db-a725-05f1d859dd69: Default # Default
+plugins:
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+  super-table:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0
+  typedlinkfield:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
+system:
+  edition: pro
+  live: true
+  name: 'Craft Headless Nuxt'
+  schemaVersion: 4.0.0.9
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

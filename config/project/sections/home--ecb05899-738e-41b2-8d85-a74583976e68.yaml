@@ -1,0 +1,17 @@
+defaultPlacement: end
+enableVersioning: true
+handle: home
+name: Home
+propagationMethod: all
+siteSettings:
+  62b8519f-3e6a-488b-b6b5-0f260e2ae0ca: # Craft Headless Nuxt NL
+    enabledByDefault: true
+    hasUrls: true
+    template: null
+    uriFormat: __home__
+  e99faab1-930e-410a-9275-15949843b78d: # Craft Headless Nuxt EN
+    enabledByDefault: true
+    hasUrls: true
+    template: null
+    uriFormat: __home__
+type: single

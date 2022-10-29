@@ -1,0 +1,20 @@
+isPublic: false
+name: 'Private Schema'
+scope:
+  - 'sites.e99faab1-930e-410a-9275-15949843b78d:read' # Craft Headless Nuxt EN
+  - 'sites.62b8519f-3e6a-488b-b6b5-0f260e2ae0ca:read' # Craft Headless Nuxt NL
+  - 'elements.drafts:read'
+  - 'elements.revisions:read'
+  - 'elements.inactive:read'
+  - 'sections.ecb05899-738e-41b2-8d85-a74583976e68:read' # Home
+  - 'entrytypes.a47da6fb-c5bb-40c6-a49d-661d60068d3f:read' # Home
+  - 'sections.df275c3d-7235-4291-828d-4527a56148e4:read' # Pages
+  - 'entrytypes.fae35562-c9f0-40db-a725-05f1d859dd69:read' # Default
+  - 'usergroups.everyone:read'
+  - 'sections.ecb05899-738e-41b2-8d85-a74583976e68:edit' # Home
+  - 'entrytypes.a47da6fb-c5bb-40c6-a49d-661d60068d3f:save' # Home
+  - 'sections.df275c3d-7235-4291-828d-4527a56148e4:edit' # Pages
+  - 'entrytypes.fae35562-c9f0-40db-a725-05f1d859dd69:edit' # Default
+  - 'entrytypes.fae35562-c9f0-40db-a725-05f1d859dd69:create' # Default
+  - 'entrytypes.fae35562-c9f0-40db-a725-05f1d859dd69:save' # Default
+  - 'entrytypes.fae35562-c9f0-40db-a725-05f1d859dd69:delete' # Default

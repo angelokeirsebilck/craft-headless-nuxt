@@ -1,0 +1,9 @@
+baseUrl: '@web/nl'
+enabled: '1'
+handle: nl
+hasUrls: true
+language: nl
+name: 'Craft Headless Nuxt NL'
+primary: false
+siteGroup: 843e693f-2b71-469b-a9e4-4a8085586dbc # Craft Headless Nuxt
+sortOrder: 2
