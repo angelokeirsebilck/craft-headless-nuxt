@@ -34,4 +34,5 @@ return GeneralConfig::create()
     ->headlessMode(true)
 
     ->maxUploadFileSize('50M')
+
 ;

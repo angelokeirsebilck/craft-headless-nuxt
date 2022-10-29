@@ -2,7 +2,7 @@ baseUrl: '@web/en'
 enabled: true
 handle: default
 hasUrls: true
-language: en-GB
+language: en
 name: 'Craft Headless Nuxt EN'
 primary: true
 siteGroup: 843e693f-2b71-469b-a9e4-4a8085586dbc # Craft Headless Nuxt

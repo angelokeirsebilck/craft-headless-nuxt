@@ -30,6 +30,24 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+        name: General
+        uid: ed8886ab-e1f6-4b98-806f-558b5ac991bf
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: a9acb779-9fef-4035-9867-d89c723f9086 # Content Builder
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b3c4c961-9f8e-41f9-ae38-7d59b9a4f90b
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: 0481893a-fe17-41d9-bbc5-855b8f423f85
         userCondition: null

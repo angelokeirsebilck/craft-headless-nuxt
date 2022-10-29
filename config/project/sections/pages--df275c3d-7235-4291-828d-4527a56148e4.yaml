@@ -8,12 +8,12 @@ siteSettings:
     enabledByDefault: true
     hasUrls: true
     template: null
-    uriFormat: '{parent.uri/{slug}'
+    uriFormat: '{parent.uri}/{slug}'
   e99faab1-930e-410a-9275-15949843b78d: # Craft Headless Nuxt EN
     enabledByDefault: true
     hasUrls: true
     template: null
-    uriFormat: '{parent.uri/{slug}'
+    uriFormat: '{parent.uri}{slug}'
 structure:
   maxLevels: null
   uid: a7a931a3-b3c6-436f-bad5-780844d97e2b
