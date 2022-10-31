@@ -16,6 +16,7 @@ return GeneralConfig::create()
     ->aliases([
         '@web' => craft\helpers\App::env('PRIMARY_SITE_URL'),
         '@webroot' => dirname(__DIR__) . '/web',
+        '@nuxtPreviewUrl' => craft\helpers\App::env('NUXT_PREVIEW_URL'),
     ])
 
     // Set the default week start day for date pickers (0 = Sunday, 1 = Monday, etc.)

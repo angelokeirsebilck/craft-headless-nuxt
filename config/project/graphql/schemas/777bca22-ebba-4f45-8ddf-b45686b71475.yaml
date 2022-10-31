@@ -10,11 +10,6 @@ scope:
   - 'entrytypes.a47da6fb-c5bb-40c6-a49d-661d60068d3f:read' # Home
   - 'sections.df275c3d-7235-4291-828d-4527a56148e4:read' # Pages
   - 'entrytypes.fae35562-c9f0-40db-a725-05f1d859dd69:read' # Default
+  - 'globalsets.85eb887f-057a-4ab2-8c67-e744e202d60c:read' # Navigation
   - 'usergroups.everyone:read'
-  - 'sections.ecb05899-738e-41b2-8d85-a74583976e68:edit' # Home
-  - 'entrytypes.a47da6fb-c5bb-40c6-a49d-661d60068d3f:save' # Home
-  - 'sections.df275c3d-7235-4291-828d-4527a56148e4:edit' # Pages
-  - 'entrytypes.fae35562-c9f0-40db-a725-05f1d859dd69:edit' # Default
-  - 'entrytypes.fae35562-c9f0-40db-a725-05f1d859dd69:create' # Default
-  - 'entrytypes.fae35562-c9f0-40db-a725-05f1d859dd69:save' # Default
-  - 'entrytypes.fae35562-c9f0-40db-a725-05f1d859dd69:delete' # Default
+  - 'categorygroups.dd227703-c864-4a4b-8185-fe18ea0785c3:read' # Projects

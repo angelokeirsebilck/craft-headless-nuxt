@@ -1,0 +1,50 @@
+defaultPlacement: end
+fieldLayouts:
+  7601e4e9-20d9-48a0-906c-000db3bc0d61:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            uid: cde4de0f-5cc2-470d-b9b7-451e1008c63c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 94be88f9-8b1d-4278-8919-6313092446f7
+        userCondition: null
+handle: projectsCat
+name: Projects
+siteSettings:
+  62b8519f-3e6a-488b-b6b5-0f260e2ae0ca: # Craft Headless Nuxt NL
+    hasUrls: true
+    template: null
+    uriFormat: '{parent.uri}/{slug}'
+  e99faab1-930e-410a-9275-15949843b78d: # Craft Headless Nuxt EN
+    hasUrls: true
+    template: null
+    uriFormat: '{parent.uri}/{slug}'
+structure:
+  maxLevels: null
+  uid: c09e8f99-4bf8-4546-b8b5-87931f07349e

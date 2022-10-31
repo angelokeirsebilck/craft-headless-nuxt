@@ -2,6 +2,18 @@ defaultPlacement: end
 enableVersioning: true
 handle: home
 name: Home
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Nuxt Live Preview'
+      -
+        - urlFormat
+        - '@nuxtPreviewUrl/{site.language}'
+      -
+        - refresh
+        - '1'
 propagationMethod: all
 siteSettings:
   62b8519f-3e6a-488b-b6b5-0f260e2ae0ca: # Craft Headless Nuxt NL
