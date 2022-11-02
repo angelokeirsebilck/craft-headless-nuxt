@@ -1,4 +1,4 @@
-dateModified: 1667244483
+dateModified: 1667379460
 email:
   fromEmail: info@angelokeirsebilck.be
   fromName: 'Craft Headless Nuxt'
@@ -14,6 +14,7 @@ meta:
     843e693f-2b71-469b-a9e4-4a8085586dbc: 'Craft Headless Nuxt' # Craft Headless Nuxt
     a9acb779-9fef-4035-9867-d89c723f9086: 'Content Builder' # Content Builder
     a47da6fb-c5bb-40c6-a49d-661d60068d3f: Home # Home
+    aa35744a-858e-4b8b-a532-27c81610a3f6: Contact # Contact
     ab6e131b-048e-4a08-9c67-43e9524869b4: Text # Text
     b8251fa3-3bd7-4ffa-a018-6be6a3ff400c: Link # Link
     cf5f6192-c76b-4391-9083-1f98915d31aa: 'Main Navigation' # Main Navigation
