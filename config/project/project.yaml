@@ -1,6 +1,6 @@
-dateModified: 1668935476
+dateModified: 1668947563
 email:
-  fromEmail: info@angelokeirsebilck.be
+  fromEmail: $EMAIL_SYSTEM
   fromName: 'Craft Headless Nuxt'
   replyToEmail: null
   template: ''
