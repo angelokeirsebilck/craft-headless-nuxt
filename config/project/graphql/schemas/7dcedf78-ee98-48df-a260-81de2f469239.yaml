@@ -11,6 +11,23 @@ scope:
   - 'sections.df275c3d-7235-4291-828d-4527a56148e4:read' # Pages
   - 'entrytypes.fae35562-c9f0-40db-a725-05f1d859dd69:read' # Default
   - 'entrytypes.aa35744a-858e-4b8b-a532-27c81610a3f6:read' # Contact
+  - 'volumes.4b6d98e6-db66-4829-9319-38ba1c5a8d7b:read' # Files
   - 'globalsets.85eb887f-057a-4ab2-8c67-e744e202d60c:read' # Navigation
   - 'usergroups.everyone:read'
   - 'categorygroups.dd227703-c864-4a4b-8185-fe18ea0785c3:read' # Projects
+  - 'formieForms.all:read'
+  - 'formieForms.a99a76e9-978c-48a8-a9b0-73845a91a01f:read'
+  - 'formieSubmissions.all:read'
+  - 'formieSubmissions.a99a76e9-978c-48a8-a9b0-73845a91a01f:read'
+  - 'volumes.4b6d98e6-db66-4829-9319-38ba1c5a8d7b:edit' # Files
+  - 'volumes.4b6d98e6-db66-4829-9319-38ba1c5a8d7b:create' # Files
+  - 'volumes.4b6d98e6-db66-4829-9319-38ba1c5a8d7b:save' # Files
+  - 'volumes.4b6d98e6-db66-4829-9319-38ba1c5a8d7b:delete' # Files
+  - 'formieSubmissions.all:edit'
+  - 'formieSubmissions.all:create'
+  - 'formieSubmissions.all:save'
+  - 'formieSubmissions.all:delete'
+  - 'formieSubmissions.a99a76e9-978c-48a8-a9b0-73845a91a01f:edit'
+  - 'formieSubmissions.a99a76e9-978c-48a8-a9b0-73845a91a01f:create'
+  - 'formieSubmissions.a99a76e9-978c-48a8-a9b0-73845a91a01f:save'
+  - 'formieSubmissions.a99a76e9-978c-48a8-a9b0-73845a91a01f:delete'

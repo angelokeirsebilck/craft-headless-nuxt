@@ -1,10 +1,29 @@
-dateModified: 1667600104
+dateModified: 1668935476
 email:
   fromEmail: info@angelokeirsebilck.be
   fromName: 'Craft Headless Nuxt'
-  transportType: craft\mail\transportadapters\Sendmail
+  replyToEmail: null
+  template: ''
+  transportSettings:
+    encryptionMethod: $EMAIL_ENCRYPTION_METHOD
+    host: $EMAIL_HOST
+    password: $EMAIL_PW
+    port: $EMAIL_PORT
+    timeout: '10'
+    useAuthentication: $EMAIL_USE_AUTH
+    username: $EMAIL_USER
+  transportType: craft\mail\transportadapters\Smtp
+fs:
+  files:
+    hasUrls: true
+    name: Files
+    settings:
+      path: '@webroot/uploads/files'
+    type: craft\fs\Local
+    url: '@web/uploads.files'
 meta:
   __names__:
+    4b6d98e6-db66-4829-9319-38ba1c5a8d7b: Files # Files
     7beb5529-5b56-4634-9f29-1eb51e3da406: Navigation # Navigation
     7bf5d9f2-b0e8-44eb-bd2a-931ae1610977: Text # Text
     7dcedf78-ee98-48df-a260-81de2f469239: 'Public Schema' # Public Schema
@@ -12,19 +31,228 @@ meta:
     85eb887f-057a-4ab2-8c67-e744e202d60c: Navigation # Navigation
     777bca22-ebba-4f45-8ddf-b45686b71475: 'Private Schema' # Private Schema
     843e693f-2b71-469b-a9e4-4a8085586dbc: 'Craft Headless Nuxt' # Craft Headless Nuxt
+    56484dc5-1fe5-4e96-94ea-c07e1c555d92: New # New
     a9acb779-9fef-4035-9867-d89c723f9086: 'Content Builder' # Content Builder
     a47da6fb-c5bb-40c6-a49d-661d60068d3f: Home # Home
     aa35744a-858e-4b8b-a532-27c81610a3f6: Contact # Contact
     ab6e131b-048e-4a08-9c67-43e9524869b4: Text # Text
     b8251fa3-3bd7-4ffa-a018-6be6a3ff400c: Link # Link
+    bf29361f-5bd3-4fac-8f6c-cf29f22e13a6: 'Contact Form' # Contact Form
     cf5f6192-c76b-4391-9083-1f98915d31aa: 'Main Navigation' # Main Navigation
     dd227703-c864-4a4b-8185-fe18ea0785c3: Projects # Projects
     df275c3d-7235-4291-828d-4527a56148e4: Pages # Pages
     e99faab1-930e-410a-9275-15949843b78d: 'Craft Headless Nuxt EN' # Craft Headless Nuxt EN
+    e65469c3-b1fd-408b-9ada-f2464b8f87f5: Form # Form
     eb118b96-e8db-471f-9e8f-6ea1a2b1a3fe: Common # Common
+    ec4c7258-d931-45e3-8191-a88b919d8558: Form # Form
     ecb05899-738e-41b2-8d85-a74583976e68: Home # Home
     fae35562-c9f0-40db-a725-05f1d859dd69: Default # Default
 plugins:
+  formie:
+    edition: standard
+    enabled: true
+    licenseKey: KRT0Q0J9O11Y3SCI6WF2KH3Z
+    schemaVersion: 2.0.8
+    settings:
+      ajaxTimeout: 10
+      alertEmails: null
+      captchas:
+        __assoc__:
+          -
+            - recaptcha
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\Recaptcha
+                -
+                  - enabled
+                  - '1'
+                -
+                  - saveSpam
+                  - true
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - handle
+                        - recaptcha
+                      -
+                        - secretKey
+                        - $RECAPTCHA_SECRET_KEY
+                      -
+                        - siteKey
+                        - $RECAPTCHA_SITE_KEY
+                      -
+                        - type
+                        - v3
+                      -
+                        - size
+                        - normal
+                      -
+                        - theme
+                        - light
+                      -
+                        - badge
+                        - bottomright
+                      -
+                        - language
+                        - auto
+                      -
+                        - minScore
+                        - 0.5
+                      -
+                        - scriptLoadingMethod
+                        - asyncDefer
+          -
+            - hcaptcha
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\Hcaptcha
+                -
+                  - enabled
+                  - '0'
+                -
+                  - saveSpam
+                  - true
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - handle
+                        - hcaptcha
+                      -
+                        - size
+                        - normal
+                      -
+                        - theme
+                        - light
+                      -
+                        - language
+                        - en
+                      -
+                        - minScore
+                        - 0.5
+                      -
+                        - scriptLoadingMethod
+                        - asyncDefer
+          -
+            - duplicate
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\Duplicate
+                -
+                  - enabled
+                  - '0'
+                -
+                  - saveSpam
+                  - true
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - handle
+                        - duplicate
+          -
+            - honeypot
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\Honeypot
+                -
+                  - enabled
+                  - '0'
+                -
+                  - saveSpam
+                  - true
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - handle
+                        - honeypot
+          -
+            - javascript
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\Javascript
+                -
+                  - enabled
+                  - '0'
+                -
+                  - saveSpam
+                  - true
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - handle
+                        - javascript
+      defaultDateDisplayType: calendar
+      defaultDateTime: null
+      defaultDateValueOption: ''
+      defaultEmailTemplate: ''
+      defaultFileUploadVolume: 'folder:4b6d98e6-db66-4829-9319-38ba1c5a8d7b' # Files
+      defaultFormTemplate: ''
+      defaultInstructionsPosition: verbb\formie\positions\AboveInput
+      defaultLabelPosition: verbb\formie\positions\AboveInput
+      defaultPage: forms
+      disabledFields:
+        - verbb\formie\fields\formfields\Address
+        - verbb\formie\fields\formfields\Calculations
+        - verbb\formie\fields\formfields\Date
+        - verbb\formie\fields\formfields\Dropdown
+        - verbb\formie\fields\formfields\Entries
+        - verbb\formie\fields\formfields\Group
+        - verbb\formie\fields\formfields\Heading
+        - verbb\formie\fields\formfields\Hidden
+        - verbb\formie\fields\formfields\Html
+        - verbb\formie\fields\formfields\Name
+        - verbb\formie\fields\formfields\Number
+        - verbb\formie\fields\formfields\Payment
+        - verbb\formie\fields\formfields\Password
+        - verbb\formie\fields\formfields\Recipients
+        - verbb\formie\fields\formfields\Repeater
+        - verbb\formie\fields\formfields\Section
+        - verbb\formie\fields\formfields\Signature
+        - verbb\formie\fields\formfields\Summary
+        - verbb\formie\fields\formfields\Table
+        - verbb\formie\fields\formfields\Tags
+        - verbb\formie\fields\formfields\Users
+      emptyValuePlaceholder: 'No response.'
+      enableBackSubmission: true
+      enableCsrfValidationForGuests: true
+      enableUnloadWarning: true
+      includeDraftElementUsage: false
+      includeRevisionElementUsage: false
+      maxIncompleteSubmissionAge: 30
+      maxSentNotificationsAge: 30
+      pdfPaperOrientation: portrait
+      pdfPaperSize: letter
+      pluginName: Formie
+      queuePriority: null
+      saveSpam: true
+      sendEmailAlerts: false
+      sentNotifications: true
+      spamBehaviour: showSuccess
+      spamBehaviourMessage: ''
+      spamEmailNotifications: false
+      spamKeywords: ''
+      spamLimit: 500
+      useQueueForIntegrations: false
+      useQueueForNotifications: false
   redactor:
     edition: standard
     enabled: true
@@ -41,8 +269,9 @@ system:
   edition: pro
   live: true
   name: 'Craft Headless Nuxt'
+  retryDuration: null
   schemaVersion: 4.0.0.9
-  timeZone: America/Los_Angeles
+  timeZone: Europe/Brussels
 users:
   allowPublicRegistration: false
   defaultGroup: null

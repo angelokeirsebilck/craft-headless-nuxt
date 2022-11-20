@@ -11,6 +11,12 @@ scope:
   - 'sections.df275c3d-7235-4291-828d-4527a56148e4:read' # Pages
   - 'entrytypes.fae35562-c9f0-40db-a725-05f1d859dd69:read' # Default
   - 'entrytypes.aa35744a-858e-4b8b-a532-27c81610a3f6:read' # Contact
+  - 'volumes.4b6d98e6-db66-4829-9319-38ba1c5a8d7b:read' # Files
   - 'globalsets.85eb887f-057a-4ab2-8c67-e744e202d60c:read' # Navigation
   - 'usergroups.everyone:read'
   - 'categorygroups.dd227703-c864-4a4b-8185-fe18ea0785c3:read' # Projects
+  - 'formieForms.all:read'
+  - 'formieSubmissions.all:read'
+  - 'formieSubmissions.all:edit'
+  - 'formieSubmissions.all:create'
+  - 'formieSubmissions.all:save'
