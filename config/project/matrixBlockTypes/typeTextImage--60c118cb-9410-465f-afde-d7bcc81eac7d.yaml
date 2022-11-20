@@ -1,0 +1,115 @@
+field: a9acb779-9fef-4035-9867-d89c723f9086 # Content Builder
+fieldLayouts:
+  e311eca0-b6f0-4eb7-bc58-aebbfe5714ca:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 0d40554b-49ae-486f-a5d6-8a7bb15645a4 # Text
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f5a61a0d-26b7-4153-8873-d2b385d31599
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: c8283b70-540c-4594-a45d-744d42316fc9 # Image
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2c2ba614-45fc-421f-b6c6-9cb2ae5281cc
+            userCondition: null
+            warning: null
+            width: 25
+        name: Content
+        uid: fc561fa6-c654-421f-aeea-7473f2340eff
+        userCondition: null
+fields:
+  0d40554b-49ae-486f-a5d6-8a7bb15645a4: # Text
+    columnSuffix: lxybcrjo
+    contentColumnType: text
+    fieldGroup: null
+    handle: itemText
+    instructions: null
+    name: Text
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: null
+      removeEmptyTags: false
+      removeInlineStyles: false
+      removeNbsp: false
+      showHtmlButtonForNonAdmins: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\redactor\Field
+  c8283b70-540c-4594-a45d-744d42316fc9: # Image
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: itemImage
+    instructions: null
+    name: Image
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:4b6d98e6-db66-4829-9319-38ba1c5a8d7b' # Files
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maxRelations: 1
+      minRelations: null
+      previewMode: full
+      restrictFiles: true
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:4b6d98e6-db66-4829-9319-38ba1c5a8d7b' # Files
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      source: null
+      sources:
+        - 'volume:88329d3b-1db3-4272-af77-bfa3b6e6a0a5' # Images
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+handle: typeTextImage
+name: 'Text / Image'
+sortOrder: 3

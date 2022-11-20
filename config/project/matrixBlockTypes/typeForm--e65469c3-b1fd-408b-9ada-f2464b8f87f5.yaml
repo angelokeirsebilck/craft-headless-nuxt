@@ -35,7 +35,7 @@ fields:
       maxRelations: 1
       minRelations: null
       selectionLabel: null
-      showSiteMenu: false
+      showSiteMenu: true
       source: null
       sources: '*'
       targetSiteId: null

@@ -1,4 +1,4 @@
-dateModified: 1668947563
+dateModified: 1668976046
 email:
   fromEmail: $EMAIL_SYSTEM
   fromName: 'Craft Headless Nuxt'
@@ -20,24 +20,35 @@ fs:
     settings:
       path: '@webroot/uploads/files'
     type: craft\fs\Local
-    url: '@web/uploads.files'
+    url: '@web/uploads/files'
+  images:
+    hasUrls: true
+    name: Images
+    settings:
+      path: '@webroot/uploads/images'
+    type: craft\fs\Local
+    url: '@web/uploads/images'
 meta:
   __names__:
+    0d40554b-49ae-486f-a5d6-8a7bb15645a4: Text # Text
     4b6d98e6-db66-4829-9319-38ba1c5a8d7b: Files # Files
     7beb5529-5b56-4634-9f29-1eb51e3da406: Navigation # Navigation
     7bf5d9f2-b0e8-44eb-bd2a-931ae1610977: Text # Text
     7dcedf78-ee98-48df-a260-81de2f469239: 'Public Schema' # Public Schema
+    60c118cb-9410-465f-afde-d7bcc81eac7d: 'Text / Image' # Text / Image
     62b8519f-3e6a-488b-b6b5-0f260e2ae0ca: 'Craft Headless Nuxt NL' # Craft Headless Nuxt NL
     85eb887f-057a-4ab2-8c67-e744e202d60c: Navigation # Navigation
     777bca22-ebba-4f45-8ddf-b45686b71475: 'Private Schema' # Private Schema
     843e693f-2b71-469b-a9e4-4a8085586dbc: 'Craft Headless Nuxt' # Craft Headless Nuxt
     56484dc5-1fe5-4e96-94ea-c07e1c555d92: New # New
+    88329d3b-1db3-4272-af77-bfa3b6e6a0a5: Images # Images
     a9acb779-9fef-4035-9867-d89c723f9086: 'Content Builder' # Content Builder
     a47da6fb-c5bb-40c6-a49d-661d60068d3f: Home # Home
     aa35744a-858e-4b8b-a532-27c81610a3f6: Contact # Contact
     ab6e131b-048e-4a08-9c67-43e9524869b4: Text # Text
     b8251fa3-3bd7-4ffa-a018-6be6a3ff400c: Link # Link
     bf29361f-5bd3-4fac-8f6c-cf29f22e13a6: 'Contact Form' # Contact Form
+    c8283b70-540c-4594-a45d-744d42316fc9: Image # Image
     cf5f6192-c76b-4391-9083-1f98915d31aa: 'Main Navigation' # Main Navigation
     dd227703-c864-4a4b-8185-fe18ea0785c3: Projects # Projects
     df275c3d-7235-4291-828d-4527a56148e4: Pages # Pages
